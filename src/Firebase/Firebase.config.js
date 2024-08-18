@@ -1,24 +1,4 @@
-// Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-
-// console.log(import.meta.env.VITE_appId)
-// Your web app's Firebase configuration
-// const firebaseConfig = {
-//       apiKey: import.meta.env.VITE_apiKey,
-//       authDomain: import.meta.env.VITE_authDomain,
-//       projectId: import.meta.env.VITE_projectId,
-//       storageBucket: import.meta.env.VITE_storageBucket,
-//       messagingSenderId: import.meta.env.VITE_messagingSenderId,
-//       appId: import.meta.env.VITE_appId,
-// };
-
-// Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// export const auth = getAuth(app);
 
 
 // Import the functions you need from the SDKs you need
@@ -29,12 +9,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDndXkZSOLES-5R8hHs14Bibtl-RCgGWcM",
-  authDomain: "assignment11-client-site-334bd.firebaseapp.com",
-  projectId: "assignment11-client-site-334bd",
-  storageBucket: "assignment11-client-site-334bd.appspot.com",
-  messagingSenderId: "972625232276",
-  appId: "1:972625232276:web:905ad249bdb4cb949acf81"
+  apiKey: "AIzaSyAyVADwwB4gILOtC5Lb9JqfJcQl96rAjW4",
+  authDomain: "super-shop-6acda.firebaseapp.com",
+  projectId: "super-shop-6acda",
+  storageBucket: "super-shop-6acda.appspot.com",
+  messagingSenderId: "439497643770",
+  appId: "1:439497643770:web:b447f2ac01bb446c721b43"
 };
 
 // Initialize Firebase

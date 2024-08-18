@@ -13,8 +13,7 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
-            <h2 className='text-xl md:text-3xl text-[#172554] font-bold'>M<span className='text-primary'>e</span>ga st
-            <span className='text-primary'>o</span>re</h2>
+            <h2 className='text-xl md:text-3xl text-[#F8B90C] font-bold'>Super Store</h2>
 
 
 
@@ -62,15 +61,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* <div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow '>
-
-            <input type='text' placeholder='search product here...' className='w-full px-2 py-2 outline-none  border-none rounded-full rounded-r-none' />
-
-
-            <div className='text-lg min-w-[50px] h-10 bg-blue-500 flex items-center justify-center rounded-r-full text-white'>
-              <GrSearch />
-            </div>
-          </div> */}
 
 
           <div
@@ -81,12 +71,7 @@ const Navbar = () => {
 
 
 
-              {/* <li>
-
-                <button onClick={toggleSidebar} className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-primary text-center">
-                  Dashboard
-                </button>
-              </li> */}
+         
 
 
               {
@@ -94,7 +79,7 @@ const Navbar = () => {
                   <li>
 
                     <Link to='/login'>
-                      <button className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-primary text-center">
+                      <button className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-[#F8B90C] text-center">
                         Login
                       </button>
                     </Link>
@@ -102,14 +87,14 @@ const Navbar = () => {
 
                   <li>
                     <Link to='/register'>
-                      <button className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-primary text-center">
+                      <button className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-[#F8B90C] text-center">
                         Register
                       </button>
                     </Link>
                   </li>
                 </> : <li>
 
-                  <button onClick={logOut} className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-primary text-center">
+                  <button onClick={logOut} className="font-medium  text-base  md:pb-2 md:px-4 py-1 px-1 rounded-lg bg-[#F8B90C] text-center">
                     Logout
                   </button>
 
