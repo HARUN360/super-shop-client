@@ -1,7 +1,7 @@
 import axios from "axios";
 // http://localhost:3000
 const axiosPublic = axios.create({
-    baseURL: 'https://mega-store-server.vercel.app'
+    baseURL: 'http://localhost:5000'
 })
 const useAxiosPublic = () => {
     return axiosPublic;

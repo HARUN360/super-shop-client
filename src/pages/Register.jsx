@@ -14,7 +14,7 @@ const Register = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.pathname || "/";
-  const { createUser, setLoading, loading } = useContext(Context)
+  const { createUser, setLoading, loading, updateUserProfile } = useContext(Context)
 
   const handleSignUp = async (event) => {
     event.preventDefault();
@@ -31,19 +31,20 @@ const Register = () => {
             title: "Please Enter A Password Of At Least 6 Characters",
         });
         return;
-    } else if (!/[A-Z]/.test(password)) {
-        Swal.fire({
-            icon: "error",
-            title: "Please Enter A Password Of At Least 1 Uppercase Character",
-        });
-        return;
-    } else if (!/[a-z]/.test(password)) {
-        Swal.fire({
-            icon: "error",
-            title: "Please Enter A Password Of At Least 1 Lowercase Character",
-        });
-        return;
     }
+    //  else if (!/[A-Z]/.test(password)) {
+    //     Swal.fire({
+    //         icon: "error",
+    //         title: "Please Enter A Password Of At Least 1 Uppercase Character",
+    //     });
+    //     return;
+    // } else if (!/[a-z]/.test(password)) {
+    //     Swal.fire({
+    //         icon: "error",
+    //         title: "Please Enter A Password Of At Least 1 Lowercase Character",
+    //     });
+    //     return;
+    // }
 
     // for profile pic
     const profileImage = form.profileImage.files[0]
@@ -52,10 +53,13 @@ const Register = () => {
 
     const key = import.meta.env.VITE_IMGBB_API_KEY
 
+    console.log('iamger profile',key);
+
     try {
       
       const { data: profileData } = await axios.post(
         `https://api.imgbb.com/1/upload?key=${key}`,
+        
         formData2
       )
 
@@ -72,7 +76,8 @@ const Register = () => {
             profileImage: profileData?.data.display_url,
           }
 
-          // console.log(info)
+          console.log(info);
+           updateUserProfile(name, profileData?.data.display_url)
 
           axiosPublic.post("/users", info)
             .then(res => {
