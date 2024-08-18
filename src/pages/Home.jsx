@@ -95,11 +95,11 @@ const Home = () => {
       <div className="mb-10 flex flex-col lg:flex-row items-center gap-5 lg:gap-8 justify-center mt-10 ">
         {/* search */}
         <form className="flex">
-          <input onChange={(e) => handleSearch(e)} type="text" name="search" className="grow p-2 rounded border-primary  border-2 input input-bordered input-success" placeholder="Search by product name" />
+          <input onChange={(e) => handleSearch(e)} type="text" name="search" className="grow p-2 rounded border-[#F8B90C]  border-2 input input-bordered input-success" placeholder="Search by product name" />
         </form>
 
         {/* Reset button */}
-        <button onClick={handleReset} className="text-white p-2 rounded bg-primary   input input-bordered input-success">Reset</button>
+        <button onClick={handleReset} className="text-white p-2 rounded bg-[#F8B90C]   input input-bordered input-success">Reset</button>
 
         {/* sort in new method */}
         <div>
@@ -111,7 +111,7 @@ const Home = () => {
             value={sort}
             name='sort'
             id='sort'
-            className="grow p-2 rounded border-primary  border-2 input input-bordered input-success"
+            className="grow p-2 rounded border-[#F8B90C]  border-2 input input-bordered input-success"
           // className='border p-4 rounded-md'
           >
             <option value=''>Sort By Price</option>
@@ -130,7 +130,7 @@ const Home = () => {
             value={DateSort}
             name='sort'
             id='sort'
-            className="grow p-2 rounded border-primary  border-2 input input-bordered input-success"
+            className="grow p-2 rounded border-[#F8B90C]  border-2 input input-bordered input-success"
           // className='border p-4 rounded-md'
           >
             <option value="">Sort by Date</option>

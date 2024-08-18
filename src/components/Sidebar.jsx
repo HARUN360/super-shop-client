@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className=" absolute lg:static z-40">
       {isSidebarVisible ? (
-        <div className="flex flex-col min-h-[800px] p-3 w-60 bg-white">
+        <div className="flex flex-col min-h-[800px] p-3 mt-20 w-60 bg-[#F8B90C] rounded-lg">
           <div className="space-y-3">
             <div className="flex items-center justify-between ">
               <h2 className='mt-4 md:text-3xl md:font-bold'>Filter</h2>
@@ -79,7 +79,7 @@ const Home = () => {
         </div>
       ) :
         (
-          <button onClick={toggleSidebar} className=" font-medium  text-white h-10 absolute  top-[5rem] left-[-20px] lg:left-1 text-base  p-1 rounded-sm bg-primary text-center">
+          <button onClick={toggleSidebar} className=" font-medium  text-white h-10 absolute  top-[5rem] left-[-20px] lg:left-1 text-base  p-1 rounded-sm bg-[#F8B90C] text-center">
             Dashboard
           </button>
         )
