@@ -6,10 +6,10 @@ import { Context } from "../Provider/AuthProvider";
 // import useAxiosPublic from "../Hooks/UseAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import Pagination from "../components/Pagination";
-import axios from "axios";
+import useAxiosPublic from "../Hooks/UseAxiosPublic";
 
 const Home = () => {
-  // const axiosPublic = useAxiosPublic()
+  const axiosPublic = useAxiosPublic()
   const { loading,  brandName, category, minPrice, maxPrice, setBrandName, setCategory, setMinPrice, setMaxPrice, setAllProducts } = useContext(Context);
 
 
@@ -33,7 +33,7 @@ const Home = () => {
     queryKey: ["products", currentPage, itemsPerPage, pages, search, sort, DateSort, brandName, category, minPrice, maxPrice],
     enabled: !loading ,
     queryFn: async () => {
-      const { data } = await axios.get(`http://localhost:5000/allProducts?page=${currentPage}&size=${itemsPerPage}&search=${search}&sort=${sort}&DateSort=${DateSort}&brandName=${brandName}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`);
+      const { data } = await axiosPublic.get(`/allProducts?page=${currentPage}&size=${itemsPerPage}&search=${search}&sort=${sort}&DateSort=${DateSort}&brandName=${brandName}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`);
       return data;
     },
   });
@@ -153,8 +153,8 @@ const Home = () => {
           }
 
         </div>) : (
-          <div className="flex justify-center items-center text-3xl text-red-600">
-            <h2>No data Found ...</h2>
+          <div className="flex justify-center items-center text-3xl text-[#F8B90C]">
+            <h2>No data...</h2>
           </div>
         )
       }

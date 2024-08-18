@@ -20,7 +20,7 @@ const Pagination = ({ handlePrevious, pages, currentPage, setCurrentPage, handle
                         >{page}</button>)
                     }
                 </div>
-
+                
 
                 <select className="px-2 py-2  text-black capitalize border-[#F8B90C] border-2 rounded-md" onChange={handleItemPerPage} value={itemsPerPage}>
                     <option value="5">5</option>

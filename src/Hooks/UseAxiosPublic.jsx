@@ -1,7 +1,7 @@
 import axios from "axios";
 // http://localhost:3000
 const axiosPublic = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://super-shop-server-three.vercel.app'
 })
 const useAxiosPublic = () => {
     return axiosPublic;

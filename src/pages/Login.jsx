@@ -5,7 +5,6 @@ import useAxiosPublic from "../Hooks/UseAxiosPublic";
 import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
 import { Context } from "../Provider/AuthProvider";
-import Swal from 'sweetalert2'
 
 const Login = () => {
   
@@ -23,27 +22,8 @@ const Login = () => {
     const email = form.email.value
     const password = form.password.value
 
-    // Validation
-    if (password.length < 6) {
-        Swal.fire({
-            icon: "error",
-            title: "Please Enter A Password Of At Least 6 Characters",
-        });
-        return;
-    } else if (!/[A-Z]/.test(password)) {
-        Swal.fire({
-            icon: "error",
-            title: "Please Enter A Password Of At Least 1 Uppercase Character",
-        });
-        return;
-    } else if (!/[a-z]/.test(password)) {
-        Swal.fire({
-            icon: "error",
-            title: "Please Enter A Password Of At Least 1 Lowercase Character",
-        });
-        return;
-    }
-
+  
+   
     try {
 
       // create user
