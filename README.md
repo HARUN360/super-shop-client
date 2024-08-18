@@ -12,7 +12,7 @@ This is a online E-commerce store website .
 
 
 ```bash
-https://megastore54.netlify.app/
+https://super-shop-6acda.web.app
 ```
 
 
