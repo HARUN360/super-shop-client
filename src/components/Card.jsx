@@ -41,9 +41,15 @@ const Card = ({ singleData }) => {
 
                     <div className="flex justify-between mt-3 items-center">
                         <h1 className="text-lg font-bold text-[#ef2d2d] md:text-xl">${price}</h1>
+
+
                         <button className="p-3 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-[#F8B90C] rounded  hover:bg-blue-600  focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">
                             view
                         </button>
+                        
+                       
+
+
                     </div>
                 </div>
             </div>
