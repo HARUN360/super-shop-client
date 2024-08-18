@@ -4,7 +4,7 @@ const Card = ({ singleData }) => {
     const { productName, productImage, brandName, price, ratings, productCreationDate , category} = singleData;
 
     return (
-        <div className="max-w-md overflow-hidden bg-white rounded-lg shadow-lg">
+        <div className="max-w-md overflow-hidden bg-gray-400 rounded-lg shadow-lg">
             <div className="flex flex-col p-3 group">
                 <div
                     className="bg-center hover:scale-110 transition-all duration-300 ease-in-out  mt-3 bg-no-repeat h-48"
@@ -16,8 +16,8 @@ const Card = ({ singleData }) => {
 
 
                 <div className="p-4 md:p-4">
-                    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{brandName}</p>
-                    <h1 className="text-xl font-medium text-gray-800 dark:text-white">{productName}</h1>
+                    <p className="mt-2 text-sm text-black dark:text-gray-400">{brandName}</p>
+                    <h1 className="text-xl font-medium text-black dark:text-white">{productName}</h1>
 
                     <div className="flex mt-2 items-center">
                         {(() => {
@@ -41,7 +41,7 @@ const Card = ({ singleData }) => {
 
                     <div className="flex justify-between mt-3 items-center">
                         <h1 className="text-lg font-bold text-[#ef2d2d] md:text-xl">${price}</h1>
-                        <button className="p-3 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-primary rounded  hover:bg-blue-600  focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">
+                        <button className="p-3 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-[#F8B90C] rounded  hover:bg-blue-600  focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">
                             view
                         </button>
                     </div>
