@@ -40,10 +40,10 @@ const Home = () => {
 
 
 
-  // pagination
+  // pagination part---------
   const { products = [], count = 0 } = data || {};
 
-  // send brand inf
+  // send brand inf part-----
   useEffect(() => {
     setAllProducts(products);
   }, [data]);
